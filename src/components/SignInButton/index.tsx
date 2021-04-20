@@ -6,7 +6,7 @@ import { signIn,signOut, useSession } from 'next-auth/client'
 export function SingInButton(){
 
   const [session] = useSession();
-  // AQUI JÁ VERIFICO SE ESTÁ LOGADO OU NÃO 
+  // AQUI JÁ VERIFICO SE ESTÁ LOGADO OU NÃO
   return session ? (
     <button
       type="button"
